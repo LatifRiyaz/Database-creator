@@ -4,7 +4,7 @@ public class operationsOfDB {
     
     static void createDB() throws Exception{
         Scanner in = new Scanner(System.in);
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "opensql@007");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "***********");
         Statement stmt = con.createStatement();
         System.out.println("\n------------------ Creating Database ------------------\n");
         try{
@@ -21,7 +21,7 @@ public class operationsOfDB {
     
     static void tableDB() throws Exception{
         Scanner in = new Scanner(System.in);
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "opensql@007");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "***********");
         Statement stmt = con.createStatement();
         System.out.println("\n------------------ Creating table ------------------\n");
         
@@ -119,7 +119,7 @@ public class operationsOfDB {
     
     static void alterDBrecords() throws Exception{
         Scanner in = new Scanner(System.in);
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "opensql@007");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "***********");
         Statement stmt = con.createStatement();
         System.out.println("\n------------------ Altering table ------------------\n");
         
@@ -275,7 +275,7 @@ public class operationsOfDB {
     }
     
     static void insertData() throws Exception{
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "opensql@007");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "***********");
         Scanner in = new Scanner(System.in);
         Statement stmt = con.createStatement();
         System.out.println("\n.......... Inserting data ..........\n");
@@ -433,7 +433,7 @@ public class operationsOfDB {
     }
     
     static void display() throws Exception{
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "opensql@007");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "***********");
         Scanner in = new Scanner(System.in);
         Statement stmt = con.createStatement();
         ResultSet rs = stmt.executeQuery("show databases");
@@ -518,7 +518,7 @@ public class operationsOfDB {
     }
     
     static void join() throws Exception{
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "opensql@007");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "root", "***********");
         Scanner in = new Scanner(System.in);
         Statement stmt = con.createStatement();
         ResultSet rs = stmt.executeQuery("show databases");
